@@ -1,19 +1,14 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-root',
   standalone: true,
+  selector: 'app-root',
   imports: [
-    CommonModule,
     RouterOutlet,
-    TranslateModule,
   ],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+    <router-outlet/>
+  `,
 })
-export class AppComponent {
-  title = 'bcb-portfolio';
-}
+export class AppComponent {}

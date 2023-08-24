@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // Polar Night
 $polar-night-100: #4C566A;
 $polar-night-200: #434C5E;
@@ -25,3 +27,16 @@ $aurora-500: #B48EAD;
 // Black and white
 $black: #000000;
 $white: #ffffff;
+
+@mixin gradient(
+  $direction,
+  $colors,
+  $type: 'linear',
+) {
+  @if $type == 'linear' {
+    background-image: linear-gradient($direction, $colors);
+    background-image: -moz-linear-gradient($direction, $colors);
+    background-image: -o-linear-gradient($direction, $colors);
+    background-image: -webkit-linear-gradient($direction, $colors);
+  }
+}

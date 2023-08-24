@@ -5,5 +5,7 @@ import applicationConfiguration from '@configuration/application';
 
 bootstrapApplication(
   AppComponent,
-  applicationConfiguration
+  {
+    ...applicationConfiguration,
+  }
 ).catch((err) => console.error(err));

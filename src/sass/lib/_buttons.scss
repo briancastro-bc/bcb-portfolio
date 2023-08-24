@@ -1,0 +1,17 @@
+
+%base-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: transparent;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

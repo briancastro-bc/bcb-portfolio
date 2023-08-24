@@ -1,8 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'assets/sass/base';
-@import 'assets/sass/theme';
-@import 'assets/sass/variables';
+@import "sass/base";
+@import "sass/theme";
+@import "sass/variables";
 
 :root {
+  --polar-night-100: #{$polar-night-100};
+  --polar-night-200: #{$polar-night-200};
+  --polar-night-300: #{$polar-night-300};
+  --polar-night-400: #{$polar-night-400};
 
+  --snow-storm-100: #{$snow-storm-100};
+  --snow-storm-200: #{$snow-storm-200};
+  --snow-storm-300: #{$snow-storm-300};
+
+  --frost-100: #{$frost-100};
+  --frost-200: #{$frost-200};
+  --frost-300: #{$frost-300};
+  --frost-400: #{$frost-400};
+
+  --aurora-100: #{$aurora-100};
+  --aurora-200: #{$aurora-200};
+  --aurora-300: #{$aurora-300};
+  --aurora-400: #{$aurora-400};
+  --aurora-500: #{$aurora-500};
+
+  --black: #{$black};
+  --white: #{$white};
 }
+

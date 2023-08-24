@@ -7,6 +7,8 @@ import {
 import { provideRouter } from '@angular/router';
 import { HttpBackend, HttpClient, provideHttpClient } from '@angular/common/http';
 import { provideServiceWorker } from '@angular/service-worker';
+import { provideStore } from '@ngrx/store';
+import { provideRouterStore } from '@ngrx/router-store';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
@@ -24,6 +26,8 @@ export default {
     provideZoneChangeDetection({
       eventCoalescing: true,
     }),
+    provideStore(),
+    provideRouterStore(),
     provideServiceWorker('ngsw-worker.js', {
       enabled: !isDevMode(),
       registrationStrategy: 'registerWhenStable:30000',
